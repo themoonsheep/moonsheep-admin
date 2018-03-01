@@ -1,0 +1,133 @@
+main {
+  display: block;
+  margin: 0px;
+  padding-left: 20%;
+}
+.row {
+  display: block;
+  float: left;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+}
+.row .column {
+  display: inline-block;
+  padding: 0px 10px;
+  float: left;
+}
+.row .column.one {
+  width: 10%;
+}
+.row .column.two {
+  width: 20%;
+}
+.row .column.three {
+  width: 30%;
+}
+.row .column.four {
+  width: 40%;
+}
+.row .column.five {
+  width: 50%;
+}
+.row .column.six {
+  width: 60%;
+}
+.row .column.seven {
+  width: 70%;
+}
+.row .column.eight {
+  width: 80%;
+}
+.row .column.nine {
+  width: 90%;
+}
+.row .column.ten {
+  width: 100%;
+}
+.btn {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  display: block;
+  border: none;
+}
+.btn.btn-purple {
+  background: #644263;
+  color: #FFFEE7;
+}
+.btn.btn-block {
+  width: 100%;
+}
+body > nav {
+  background: #644263;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 2px 0 4px 0 #644263;
+  width: 20%;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 700;
+  font-size: 20px;
+}
+body > nav .logo {
+  text-align: center;
+}
+body > nav ul {
+  margin: 0px;
+  float: right;
+  clear: both;
+  text-align: left;
+  padding: 0px;
+  list-style: none;
+  width: 80%;
+}
+body > nav ul li,
+body > nav ul a {
+  display: block;
+  clear: both;
+}
+body > nav ul li > a {
+  padding: 6px 0px 6px 17px;
+}
+body > nav ul li > a.active {
+  background: #FFFEE7;
+  color: #644263;
+  border-radius: 16px 0px 0px 16px;
+  -moz-border-radius: 16px 0px 0px 16px;
+  -webkit-border-radius: 16px 0px 0px 16px;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 700;
+  font-size: 42px;
+  margin-top: 0px;
+}
+a {
+  color: #FFFEE7;
+  text-decoration: none;
+}
+#hero {
+  padding-top: 56px;
+  background: #D0C6D0;
+  color: #644263;
+}
+#hero h1 ~ p {
+  line-height: 30px;
+}
+#hero button ~ p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+}

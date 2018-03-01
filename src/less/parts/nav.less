@@ -1,0 +1,32 @@
+body > nav {
+  background: @purple;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 2px 0 4px 0 @purple;
+  width: 20%;
+  .anontype(20px);
+  .logo {
+    text-align: center;
+  }
+  ul {
+    margin: 0px;
+    float: right;
+    clear: both;
+    text-align: left;
+    padding: 0px;
+    list-style: none;
+    width: 80%;
+    li, a {
+      display: block;
+      clear: both;
+    }
+    li > a {
+      padding: 6px 0px 6px 17px;
+      &.active {
+        background: @white;
+        color: @purple;
+        .borderradius(16px 0px 0px 16px);
+      }
+    }
+  }
+}
