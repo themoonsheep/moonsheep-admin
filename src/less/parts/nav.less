@@ -1,12 +1,10 @@
 body > nav {
   background: @purple;
-  height: 100vh;
-  position: fixed;
   box-shadow: 2px 0 4px 0 @purple;
-  width: 20%;
   .anontype(20px);
   .logo {
     text-align: center;
+    margin: 30px auto 50px;
   }
   ul {
     margin: 0px;
@@ -19,9 +17,14 @@ body > nav {
     li, a {
       display: block;
       clear: both;
+      > ul {
+        .anontype(16px);
+        width: 95%; 
+      }
     }
+
     li > a {
-      padding: 6px 0px 6px 17px;
+      padding: 2px 0px 2px 17px;
       &.active {
         background: @white;
         color: @purple;

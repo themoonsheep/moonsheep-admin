@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:700|Open+Sans:600" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" >
     <link rel="stylesheet" href="/css/main.css" >
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -17,13 +18,13 @@
   </head>
 
   <body>
-    <nav>
+    <!-- Admin Panel Navigation -->
+    <nav class="navbar navbar-fixed-left">
       <div class="logo">
         <a href="/">
-          <img src="/assets/moonsheep-logo.svg" alt="Moonsheep Logo">
+          <img src="/assets/moonsheep-admin-logo.png" alt="Moonsheep Logo">
         </a>
       </div>
-
       <ul>
         <li>
           <a href="" class="active">Campaigns</a>
@@ -39,9 +40,12 @@
         <li><a href="">Volunteers <img src="/assets/admin_out-link.svg"></a></li>
       </ul>
     </nav>
-    <main>
-      <header class="row" id="hero">
-        <div class="column seven">
+    <!-- EOF Navigation -->
+
+    <main class="container-fluid">
+      <!-- Main Header Section -->
+      <header class="row full-width" id="hero">
+        <div class="col-md-9">
           <h1>Campaigns</h1>
           <p>
             48% overall documents liberated<br />
@@ -50,11 +54,118 @@
           </p>
         </div>
 
-        <div class="column three">
-          <button class="btn btn-purple btn-block" type="button">Export All</button>
+        <div class="col-md-3">
+          <button class="btn btn-purple btn-block" type="button">Export All  <img src="/assets/admin_dropdown.svg" alt="chevron down, opens a dropdown menu"></button>
           <p class="center-text">Download all data from paused, stopped and finished campaigns.</p>
         </div>
       </header>
+      <!-- EOF Header -->
+      <section id="campaigns">
+
+        <!-- Single Campaign Wrapper -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="campaign-card">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>CampaignTitle <button class="btn btn-small btn-purple">Ready <img src="/assets/admin_ready.svg" alt="Ready Icon"></button></h2>
+                  <ul>
+                    <li>48% documents liberated</li>
+                    <li>Time elapsed 27 hours</li>
+                    <li>2 / 8  documents waiting verification</li>
+                    <li>1 / 8  documents finished</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 relbox">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <button class="btn btn-block btn-purple" type="button">Start</button>
+                    </div>
+                  </div>
+                  <div class="bottom-box">
+                    <span>Number of same inputs verify: <span class="badge">2</span></span>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-purple btn-block" type="button">Export <img src="/assets/admin_dropdown.svg" alt="chevron down, opens a dropdown menu"></button>
+                  <p class="small-text">Download all data from finished documents.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- EOF Single Campaign -->
+
+        <!-- Single Campaign Wrapper -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="campaign-card">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Second Campaign <button class="btn btn-small btn-purple">Active <img src="/assets/admin_active.svg" alt="Active Campaign Icon"></button></h2>
+                  <ul>
+                    <li>48% documents liberated</li>
+                    <li>Time elapsed 27 hours</li>
+                    <li>2 / 8  documents waiting verification</li>
+                    <li>1 / 8  documents finished</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 relbox">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <button class="btn btn-block btn-transparent" type="button">Pause</button>
+                    </div>
+                  </div>
+                  <div class="bottom-box">
+                    <span>Number of same inputs verify: <span class="badge">2</span></span>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-purple btn-block" type="button">Export <img src="/assets/admin_dropdown.svg" alt="chevron down, opens a dropdown menu"></button>
+                  <p class="small-text">Download all data from finished documents.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- EOF Single Campaign -->
+
+        <!-- Single Campaign Wrapper -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="campaign-card">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2>Second Campaign <button class="btn btn-small btn-purple">Paused <img src="/assets/admin_pause.svg" alt="Paused Campaign Icon"></button></h2>
+                  <ul>
+                    <li>48% documents liberated</li>
+                    <li>Time elapsed 27 hours</li>
+                    <li>2 / 8  documents waiting verification</li>
+                    <li>1 / 8  documents finished</li>
+                  </ul>
+                </div>
+                <div class="col-md-4 relbox">
+                  <div class="row">
+                    <div class="col-md-8">
+                      <button class="btn btn-block btn-purple" type="button">Resume</button>
+                      <button class="btn btn-block btn-transparent" type="button">Stop</button>
+                    </div>
+                  </div>
+                  <div class="bottom-box">
+                    <span>Number of same inputs verify: <span class="badge">2</span></span>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <button class="btn btn-purple btn-block" type="button">Export <img src="/assets/admin_dropdown.svg" alt="chevron down, opens a dropdown menu"></button>
+                  <p class="small-text">Download all data from finished documents.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- EOF Single Campaign -->
+
+      </section>
     </main>
   </body>
 

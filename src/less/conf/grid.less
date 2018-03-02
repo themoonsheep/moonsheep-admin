@@ -1,19 +1,25 @@
+@gutter: 10px;
+@margin: -@gutter;
+
 
 main {
   display: block;
   margin: 0px;
-  padding-left: 20%;
+  padding-left: 15%;
+  width: 100%; 
 }
 .row {
+  margin: 0px @margin;
   display: block;
-  float: left;
+  clear: both;
   width: 100%;
-  margin: 0px;
-  padding: 10px; 
-
+  .clearfix;
+  &.full-width {
+    margin: 0px;
+  }
   .column {
-    display: inline-block;
-    padding: 0px 10px;
+  //  display: inline-block;
+    padding: 0px @gutter;
     float: left;
     &.one    { width: 10%;  }
     &.two    { width: 20%;  }

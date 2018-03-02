@@ -15,3 +15,11 @@
   -moz-border-radius: @Corners;
   -webkit-border-radius: @Corners;
 }
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
