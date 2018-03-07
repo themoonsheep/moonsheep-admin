@@ -3,6 +3,7 @@
 @import "parts/components";
 
 @import "parts/nav";
+@import "parts/tables";
 
 
 * {
@@ -34,6 +35,11 @@ a {
   button ~ p {
     .opentype(12px);
     text-align: center;
+  }
+
+  &.campaign-header {
+    h1 { line-height: 80%; }
+    ul { list-style: none; padding: 0px; }
   }
 }
 .small-text {

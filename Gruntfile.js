@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         banner: '/* <%= pkg.name %> <%= grunt.template.today("dd/mm/yyyy") %> */\n'
       },
       build: {
-        src: 'src/js/script.js',
+        src: 'src/js/moonsheep.js',
         dest: 'js/<%= pkg.name %>.min.js'
       }
     },
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 
     watch: {
       uglify: {
-        files: 'src/js/script.js',
+        files: 'src/js/moonsheep.js',
         tasks: 'uglify:build'
       },
       less: {

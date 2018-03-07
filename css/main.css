@@ -128,6 +128,77 @@ body > nav ul li > a:hover {
   color: #FFFEE7;
   text-decoration: none;
 }
+table {
+  width: 100%;
+  margin-top: 30px;
+}
+table th {
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 700;
+  font-size: 20px;
+  background: #C8BCC8;
+  color: #644263;
+  text-align: left;
+  padding: 1px 0px 5px 21px;
+}
+table td {
+  padding: 7px 0px 6px 21px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #644263;
+}
+table td:last-child {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 110%;
+}
+#volunteers table td:last-child {
+  text-align: center;
+}
+.progress-bar-wrapper {
+  background-color: rgba(100, 66, 99, 0.1);
+  height: 25px;
+  width: 100%;
+  position: relative;
+}
+.progress-bar-wrapper .progress-bar {
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: 25px;
+  position: absolute;
+  background: #644263;
+  top: 0;
+  left: 0;
+}
+.progress-bar-wrapper .progress-number {
+  position: absolute;
+  height: 25px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 110%;
+}
+.verify {
+  background: #644263;
+  border: none;
+  color: white;
+  height: 28px;
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: 700;
+  font-size: 16px;
+}
 * {
   box-sizing: border-box;
 }
@@ -173,6 +244,13 @@ a:hover {
   font-weight: 700;
   font-size: 12px;
   text-align: center;
+}
+#hero.campaign-header h1 {
+  line-height: 80%;
+}
+#hero.campaign-header ul {
+  list-style: none;
+  padding: 0px;
 }
 .small-text {
   font-family: 'Open Sans', sans-serif;
