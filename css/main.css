@@ -81,15 +81,28 @@ body > nav ul a > ul {
   font-size: 16px;
   width: 95%;
 }
+body > nav ul li > ul li > a,
+body > nav ul a > ul li > a {
+  padding: 4px 0px 4px 17px;
+}
 body > nav ul li > a {
   padding: 2px 0px 2px 17px;
 }
-body > nav ul li > a.active {
+body > nav ul li > a.active,
+body > nav ul li > a.active:hover {
   background: #FFFEE7;
   color: #644263;
   border-radius: 16px 0px 0px 16px;
   -moz-border-radius: 16px 0px 0px 16px;
   -webkit-border-radius: 16px 0px 0px 16px;
+}
+body > nav ul li > a:hover {
+  background: #8D738C;
+  color: #FFFEE7;
+  border-radius: 16px 0px 0px 16px;
+  -moz-border-radius: 16px 0px 0px 16px;
+  -webkit-border-radius: 16px 0px 0px 16px;
+  text-decoration: none;
 }
 * {
   box-sizing: border-box;

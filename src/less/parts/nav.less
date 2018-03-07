@@ -19,16 +19,28 @@ body > nav {
       clear: both;
       > ul {
         .anontype(16px);
-        width: 95%; 
+        width: 95%;
+        li > a {
+          padding: 4px 0px 4px 17px;
+
+        }
       }
     }
 
     li > a {
       padding: 2px 0px 2px 17px;
-      &.active {
+
+      &.active, &.active:hover {
         background: @white;
         color: @purple;
         .borderradius(16px 0px 0px 16px);
+
+      }
+      &:hover {
+        background: @hover;
+        color: @white;
+        .borderradius(16px 0px 0px 16px);
+        text-decoration: none;
       }
     }
   }
