@@ -45,3 +45,24 @@ body > nav {
     }
   }
 }
+
+.dropdown ul.dropdown-menu {
+  width: 100%;
+  .borderradius(0px);
+  padding: 0px;
+  margin-top: 2px; 
+  .divider {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  li > a {
+    .anontype(16px);
+    line-height: 30px;
+    color: @purple;
+    &:hover {
+      background: @hover;
+      color: @white;
+      text-decoration: none;
+    }
+  }
+}
