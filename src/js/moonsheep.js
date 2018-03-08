@@ -13,7 +13,7 @@ var Moonsheep = {
 
       $(this).css('width', w + '%');
       t.text(w + '%');
-      if(w > 48){
+      if(w > 45){
         t.css('color', '#FFFEE7');
       }
       else {
