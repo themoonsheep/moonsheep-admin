@@ -24,21 +24,30 @@
         <a href="/">
           <img src="assets/moonsheep-admin-logo.png" alt="Moonsheep Logo">
         </a>
+
+        <button type="button" class="menu-toggle" data-target="#main-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
       </div>
-      <ul>
-        <li>
-          <a href="" class="active">Campaigns</a>
-          <ul>
-            <li><a href="">First campaign</a></li>
-            <li><a href="">Second campaign</a></li>
-            <li><a href="">Third campaign</a></li>
-            <li><a href="">Fourth campaign</a></li>
-          </ul>
-        </li>
-        <li><a href="">Users</a></li>
-        <li><a href="">Documents</a></li>
-        <li><a href="">Volunteers <img src="assets/admin_out-link.svg"></a></li>
-      </ul>
+      <div  id="main-nav" class="clearfix">
+        <ul>
+          <li>
+            <a href="" class="active">Campaigns</a>
+            <ul>
+              <li><a href="">First campaign</a></li>
+              <li><a href="">Second campaign</a></li>
+              <li><a href="">Third campaign</a></li>
+              <li><a href="">Fourth campaign</a></li>
+            </ul>
+          </li>
+          <li><a href="">Users</a></li>
+          <li><a href="">Documents</a></li>
+          <li><a href="">Volunteers <img src="assets/admin_out-link.svg"></a></li>
+        </ul>
+      </div>
     </nav>
     <!-- EOF Navigation -->
 
@@ -312,6 +321,7 @@
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/moonsheep_admin.min.js"></script>
   </body>
 
 

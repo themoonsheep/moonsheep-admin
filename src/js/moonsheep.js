@@ -2,6 +2,7 @@ var Moonsheep = {
   init: function(){
     console.log('MOONSHEEP RISING...');
     this.progressBar();
+    this.menuToggle();
   },
 
   /** Init width of prog bars **/
@@ -18,6 +19,21 @@ var Moonsheep = {
       }
       else {
         t.css('color', '#644263');
+      }
+    });
+  },
+
+  menuToggle: function(){
+    $('.menu-toggle').click(function(e){
+      e.preventDefault();
+      var target = $(this).data('target');
+      if($(target).is(':visible')){
+        $(this).removeClass('close');
+        $(target).removeClass('show').addClass('hide');
+      }
+      else {
+        $(this).addClass('close');
+        $(target).removeClass('hide').addClass('show');
       }
     });
   }
