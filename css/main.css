@@ -356,4 +356,17 @@ table td:last-child {
     clear: both;
     display: none;
   }
+  .relbox {
+    min-height: auto;
+    height: auto;
+  }
+  .relbox > .bottom-box {
+    top: 0px;
+  }
+  .relbox > .row > div {
+    margin-top: 60px;
+  }
+  .btn-block {
+    margin: 10px auto;
+  }
 }
